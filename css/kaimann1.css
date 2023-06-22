@@ -670,7 +670,7 @@ header{
 
     .test3{
       position: relative;
-      background-image: url(../../../kaimann_c/material/jpeg/AdobeStock_279753239\ \(1\).jpeg);
+      background-image: url(kaimann_c/material/jpeg/AdobeStock_279753239\ \(1\).jpeg);
       object-fit: cover;
       background-size: cover;
     }
