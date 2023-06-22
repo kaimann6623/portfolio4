@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/menu2.css">
+  <title>MENU</title>
+</head>
+<body>
+
+  <!-- <a href="https://front.codes/" class="logo" target="_blank">
+    <img src="../../kaimann_c/LOGO/svg/アセット 3.svg" alt="">
+  </a> -->
+
+    <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon"/>
+    <label for="menu-icon"></label>
+    <nav class="nav">     
+      <ul class="pt-5">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="kaimannmenu.html">MENU</a></li>
+        <li><a href="kaimannmember.html">MEMBER</a></li>
+        <li><a href="#">ACCESS</a></li>
+      </ul>
+    </nav>
+
+    <!-- <div class="section-center">
+      <h1 class="mb-0">Pure CSS Menu</h1>
+    </div> -->
+
+
+  <div class="background"></div>
+
+<div class="split">
+  
+  <div class="split__img-wrapper">
+    <div class="split__img">
+     <img src="kaimann_c/material/jpeg/coffee.jpg" alt="">
+    </div>
+  </div>
+  
+  <div class="split__body">
+    <h2 class="split__title">drink</h2>
+    <p class="split__text">ダミーテキストダミーテキストダミーテキスト<br>ダミーテキストダミーテキストダミーテキスト</p>
+  </div>
+</div>
+
+<div class="split">
+  <div class="split__img-wrapper">
+    <div class="split__img">
+      <img src="kaimann_c/material/jpeg/hotdog.jpg" alt="">
+    </div>
+  </div>
+  
+  <div class="split__body">
+    <h2 class="split__title">food</h2>
+    <p class="split__text">coka-cola<br>coka-cola</p>
+  </div>
+</div>
+
+<div class="split">
+  <div class="split__img-wrapper">
+    <div class="split__img">
+     <img src="kaimann_c/material/jpeg/maxresdefault.jpg" alt="">
+    </div>
+  </div>
+  
+  <div class="split__body">
+    <h2 class="split__title">sweets</h2>
+    <p class="split__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+</div>
+
+<!-- <footer>
+  <div class="footer05">
+      <div class="wrap">
+       <div class="box">
+         <h3>タイトル</h3>
+         <p>
+          ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+         </p>
+       </div>
+       <div class="box">
+         <h3>タイトル</h3>
+         <ul>
+           <li><a href="#">AAAAA</a></li>
+           <li><a href="#">BBBBB</a></li>
+           <li><a href="#">CCCCC</a></li>
+           <li><a href="#">DDDDD</a></li>
+           <li><a href="#">EEEEE</a></li>
+         </ul>
+       </div>
+       <div class="box">
+         <h3>タイトル</h3>
+         <ul>
+         <li><a href="#">FFFFF</a></li>
+         <li><a href="#">GGGGG</a></li>
+         <li><a href="#">HHHHH</a></li>
+         <li><a href="#">IIIII</a></li>
+         <li><a href="#">JJJJJ</a></li>
+         </ul>
+       </div>
+       <div class="box">
+         <h3>タイトル</h3>
+         <ul>
+         <li><a href="#">KKKKK</a></li>
+         <li><a href="#">LLLLL</a></li>
+         <li><a href="#">MMMMM</a></li>
+         <li><a href="#">NNNNN</a></li>
+         <li><a href="#">OOOOO</a></li>
+         </ul>
+       </div>
+       <p class="copyright">
+         &copy; My Site
+       </p>
+      </div>
+     </div>
+</footer> -->
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script>
+  $(window).on('scroll', function() {
+  
+  var $window = $(window);
+  var $panel = $('.split');
+  
+  var scroll = $window.scrollTop() + ($window.height() / 4);
+  
+  $panel.removeClass('show');
+  
+  $panel.each(function() {
+    var $this = $(this);
+    
+    if ($this.offset().top <= scroll && $this.offset().top + $this.height() > scroll) {
+    $this.addClass('show');
+  }
+  });
+  
+  
+}).scroll();
+<!-- </script>
+    <script src="js/simpleParallax.js"></script>
+    <script> -->
+    //     var image = document.getElementsByClassName('thumbnail');
+    // new simpleParallax(image);
+    
+    // var image = document.getElementsByClassName('thumbnail');
+    // new simpleParallax(image, {
+    // 	orientation: 'right'
+    // });
+    
+    // var image = document.getElementsByClassName('thumbnail');
+    // new simpleParallax(image, {
+    //     scale: 2
+    // });
+
+    var image = document.getElementsByClassName('thumbnail');
+new simpleParallax(image, {
+	delay: .6,
+	transition: 'cubic-bezier(0,0,0,1)'
+});
+    </script>
+
+</body>
+</html>
